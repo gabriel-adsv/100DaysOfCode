@@ -1,4 +1,4 @@
-// DESAFIO - DIA 1
+// DESAFIO 100 DIA DE CÓDIG0- DIA 1/100
 // Reescreva o código abaixo de maneira que ele imprima as informações de maneira correta, que faça sentido e sem erros:
 let numeroUm = 1;
 let stringUm = '1';
