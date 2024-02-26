@@ -1,6 +1,6 @@
 let numeroSorteado = 0;
 
-while(numeroSorteado == 0) {
+while(numeroSorteado === 0) {
 	numeroSorteado = ((Math.random() * 100) / 10).toFixed();
 	continue;
 }
