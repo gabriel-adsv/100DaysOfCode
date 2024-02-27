@@ -1,58 +1,51 @@
-let numeroSorteado = 0;
-
-while(numeroSorteado === 0) {
-	numeroSorteado = ((Math.random() * 100) / 10).toFixed();
-	continue;
-}
-
-console.log(numeroSorteado);
-
 alert('Boas vindas ao jogo do Número Secreto!');
 
-let numeroDoUsuario = prompt('Por favor, escolha um número de 1 a 10:');
-let chances = 1;
+let numeroMaximo = 10;
+let numeroSorteado = parseInt(Math.random() * numeroMaximo + 1);
+console.log(numeroSorteado);
+let numeroEscolhido = prompt('Por favor, escolha um número de 1 a 10:');
+let contadorTentativas = 1;
 
-while(isNaN(numeroDoUsuario) || numeroDoUsuario > 10 || numeroDoUsuario == '') {
-	alert('Valor inválido! Digite um número entre 1 e 10.');
-	numeroDoUsuario = prompt('Por favor, escolha um número de 1 a 10:');
+while(isNaN(numeroEscolhido) || numeroEscolhido > 10 || numeroEscolhido == '') {
+	numeroEscolhido = prompt('Valor inválido! Escolha um número de 1 a 10:');
 	continue;
 }
 
 for(let tentativas = 5; tentativas > 0; tentativas--) {
-	if(numeroDoUsuario != numeroSorteado) {
-		tentativas--;
-		chances++;
-		if(numeroSorteado > numeroDoUsuario) {
-			alert(`Você errou! O número sorteado é maior que ${numeroDoUsuario}.`);
-		} else {
-			alert(`Você errou! O número sorteado é menor que ${numeroDoUsuario}.`);
-		}
-
-		if(tentativas > 1) {
-			alert(`Tente novamente! Você tem mais ${tentativas} tentativas.`);
-			numeroDoUsuario = prompt('Digite outro número:');
-		} else {
-			alert(`Tente novamente! Você tem 1 tentativa.`);
-			numeroDoUsuario = prompt('Digite outro número:');
-			if(numeroDoUsuario != numeroSorteado) {
-				alert(`Infelizmente você não acertou! O número escolhido foi ${numeroSorteado}!`);
-				alert('Fim do jogo! =)');
-			}
-			break;
-		}
+	if(numeroEscolhido == numeroSorteado) {
+		alert(`Muito bem! Você adivinhou o número sorteado com ${contadorTentativas} tentativa.`);
+		break;
 	} else {
-		if(chances > 1) {
-			alert(`Parábens, você adivinhou o número sorteado em ${chances} tentivas!`);
-			break;
+		if(numeroEscolhido > numeroSorteado) {
+			alert('O número escolhido é maior que número sorteado.');
 		} else {
-			alert(`Parábens, você adivinhou o número sorteado em 1 tentativa!`);
-			break;
+			alert('O número escolhido é menor que número sorteado.');
 		}
 	}
+
+	contadorTentativas++;
+	tentativas--;
+
+	let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
+
+	if(tentativas > 1) {
+		numeroEscolhido = prompt(`Você tem mais ${tentativas} ${palavraTentativa}. Digite outro número:`);
+		if(numeroEscolhido == numeroSorteado) {
+			alert(`Muito bem! Você adivinhou o número sorteado com ${contadorTentativas} ${palavraTentativa}.`);
+			break;	
+		}
+	} else {
+		numeroEscolhido = prompt('Última tentativa. Digite outro número:');
+		if(numeroEscolhido != numeroSorteado) {
+			alert(`Infelizmente você não adivinhou! O número escolhido foi ${numeroSorteado}!`);
+		} else {
+			alert('Legal, você adivinhou o número sorteado na última tentativa!');
+		}
+	}		
 }
 
 alert('Fim do jogo! =)');
-
+//55 linhas de código
 
 // COMANDO COMMIT
 // git add .
