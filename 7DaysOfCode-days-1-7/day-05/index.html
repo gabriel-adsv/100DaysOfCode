@@ -12,7 +12,7 @@
 	
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/main.js" type="module" defer></script>
+	<!-- <script src="js/main.js" type="module" defer></script> -->
 </head>
 <body>
 	
@@ -25,9 +25,9 @@
 			</div>
 			
 			<div class="input-wrapper">
-				<label for="github-user" class="sr-only">Usuário do Github</label>
+				<label for="lista-produtos" class="sr-only">Usuário do Github</label>
 				
-				<input type="text" name="" id="github-user" placeholder="Adicione um item na sua lista de compras">
+				<input type="text" name="" id="lista-produtos" placeholder="Adicione um item na lista de compras">
 				
 				<button>
 					<img src="assets/arrow-down.svg" alt="Cesta de compras">                      
@@ -37,16 +37,13 @@
 		</header>
 
 		<div class="thead">
-			<div>Usuário</div>
-			<div>Repositories</div>
-			<div>Followers</div>
-			<div>Ação</div>
+			<span>Produtos</span>
 		</div>
 		
 		<div class="table-wrapper">
 			<table>
 				
-				<div class="noItem hide">
+				<div class="noItem">
 					<img src="assets/supermarket-basket.svg" alt="">
 					<h2>Nenhum item adicionado</h2>
 				</div>
@@ -56,6 +53,7 @@
 				</tbody>
 			</table>                       
 		</div>
-		
+	</div>
+	<script src="main.js"></script>	
 </body>
 </html>

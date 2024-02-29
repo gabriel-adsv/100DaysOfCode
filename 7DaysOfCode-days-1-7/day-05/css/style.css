@@ -32,7 +32,7 @@ body {
   width: 90%;
 
   margin: auto;
-  margin-bottom: 11.6rem;
+  margin-bottom: 6rem;
     
 }
 
@@ -56,8 +56,8 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  margin-top: 11.5rem;
-  margin-bottom: 8.7rem;
+  margin-top: 6rem;
+  margin-bottom: .7rem;
 }
 
 header .logo {
@@ -133,8 +133,6 @@ header button {
 
 header button:hover {
   background: #574c7e;
-
-  /* color: hsl(0, 0%, 100%); */
 }
 
 .big-table-wrapper {
@@ -157,6 +155,8 @@ table {
 }
 
 .thead {
+  padding: 16px 24px 16px 40px;
+
   font-weight: 700;
   font-size: 2rem;
   line-height: 3.2rem;
@@ -165,7 +165,7 @@ table {
 
   background: var(--dark-purple-color);
   
-  margin-top: 8.7rem;
+  margin-top: 5.7rem;
   
   display: flex;
   text-align: left;
