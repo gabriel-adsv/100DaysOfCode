@@ -66,3 +66,4 @@ function addItem() {
 		noItemMessage.style.display = "none";
 	}
 }
+
