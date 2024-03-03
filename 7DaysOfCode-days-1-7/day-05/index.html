@@ -12,7 +12,7 @@
 	
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<!-- <script src="js/main.js" type="module" defer></script> -->
+	<script src="main.js" type="module" defer></script>
 </head>
 <body>
 	
@@ -25,9 +25,9 @@
 			</div>
 			
 			<div class="input-wrapper">
-				<label for="lista-produtos" class="sr-only">Usuário do Github</label>
+				<label for="product-list" class="sr-only">Lista de produtos</label>
 				
-				<input type="text" name="" id="lista-produtos" placeholder="Adicione um item na lista de compras">
+				<input type="text" name="" id="product-list" placeholder="Adicione um item na lista">
 				
 				<button>
 					<img src="assets/arrow-down.svg" alt="Cesta de compras">                      
@@ -36,24 +36,23 @@
 			</div>
 		</header>
 
-		<div class="thead">
+		<div class="products">
 			<span>Produtos</span>
 		</div>
 		
-		<div class="table-wrapper">
-			<table>
-				
-				<div class="noItem">
-					<img src="assets/supermarket-basket.svg" alt="">
-					<h2>Nenhum item adicionado</h2>
-				</div>
-				
-				<tbody class="mainTbody">
-					
-				</tbody>
-			</table>                       
+		<div class="list-item">
+			<div class="noItem">
+				<img src="assets/supermarket-basket.svg" alt="">
+				<h2>Nenhum item adicionado</h2>
+			</div>
+			
+			<div class="item">
+				<ul>	
+					<li>Leite</li>
+					<button>Remover</button>
+				</ul>                       
+			</div>
 		</div>
 	</div>
-	<script src="main.js"></script>	
 </body>
 </html>
