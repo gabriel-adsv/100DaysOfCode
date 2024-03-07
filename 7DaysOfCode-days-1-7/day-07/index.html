@@ -13,46 +13,46 @@
 </head>
 <body>
   <div id="calculator">
-    <div id="display">
+    <div id="display" >
       <div id="last-calc">1 + 1</div>
       <div id="result">
         <img src="assets/equals.svg" alt="sinal de igual">
-        <span id="output">2</span>
+        <span id="resultado">2</span>
       </div>
     </div>
     <div id="keyboard">
-      <button id="Ce" class="letter-color">CE</button>
+      <button id="Ce" class="letter-color" onclick="limparDisplay()">CE</button>
       <button id="button-c">C</button>
-      <button id="percent">
+      <button id="percent" onclick="colocarAlgo('%')">
         <img src="assets/percent.svg" alt="sinal de porcentagem">
       </button>
-      <button id="division" class="color-button-dark">
+      <button id="division" class="color-button-dark" onclick="colocarAlgo('/')">
         <img src="assets/divide.svg" alt="sinal de divisão">
       </button>
-      <button id="number-7">7</button>
-      <button id="number-8">8</button>
-      <button id="number-9">9</button>
-      <button class="color-button-dark">
+      <button id="number" onclick="colocarAlgo('7')">7</button>
+      <button id="number" onclick="colocarAlgo('8')">8</button>
+      <button id="number" onclick="colocarAlgo('9')">9</button>
+      <button class="color-button-dark" onclick="colocarAlgo('*')">
         <img id="multiplication" src="assets/x.svg" alt="sinal de mutiplicação">
       </button>
-      <button id="number-4">4</button>
-      <button id="number-5">5</button>
-      <button id="number-6">6</button>
-      <button class="color-button-dark">
+      <button id="number" onclick="colocarAlgo('4')">4</button>
+      <button id="number" onclick="colocarAlgo('5')">5</button>
+      <button id="number" onclick="colocarAlgo('6')">6</button>
+      <button class="color-button-dark" onclick="colocarAlgo('-')">
         <img id="minus" src="assets/minus.svg" alt="sinal de subtração">
       </button>
-      <button id="number-1">1</button>
-      <button id="number-2">2</button>
-      <button id="number-3">3</button>
-      <button class="color-button-dark">
+      <button id="number" onclick="colocarAlgo('1')">1</button>
+      <button id="number" onclick="colocarAlgo('2')">2</button>
+      <button id="number" onclick="colocarAlgo('3')">3</button>
+      <button class="color-button-dark" onclick="colocarAlgo('+')">
         <img id="plus" src="assets/plus.svg" alt="sinal de soma">
       </button>
       <button>
-        <img id="plus-minus" src="assets/plus-minus.svg" alt="sinal de soma e subtração">
+        <img id="plus-minus" src="assets/plus-minus.svg" alt="sinal de soma e subtração" onclick="colocarAlgo('')">
       </button>
-      <button id="number-0">0</button>
-      <button id="comma">,</button>
-      <button id="equal" class="color-button-light">
+      <button id="number" onclick="colocarAlgo('0')">0</button>
+      <button id="comma" onclick="colocarAlgo(',')">,</button>
+      <button id="equal" class="color-button-light" onclick="calcular()">
         <img src="assets/equals-2.svg" alt="sinal de igual">
       </button>
     </div>
