@@ -39,3 +39,10 @@ function calcular(){
       document.getElementById('resultado').innerHTML = "Coloque algo";
   }
 };
+
+function apagar(){
+  const resultado = document.getElementById('resultado').innerHTML;
+  const numero = resultado.substring(1);
+  document.getElementById('resultado').innerHTML = numero;
+  document.getElementById('last-calc').innerHTML = resultado;
+}
