@@ -33,10 +33,10 @@ function limparDisplay() {
 function calcular(){
   const resultado = document.getElementById('resultado').innerHTML;
   if(resultado){
-      document.getElementById('last-calc').innerHTML = resultado;
-      document.getElementById('resultado').innerHTML = eval(resultado);
+    document.getElementById('last-calc').innerHTML = resultado;
+    document.getElementById('resultado').innerHTML = eval(resultado);
   } else {
-      document.getElementById('resultado').innerHTML = "Coloque algo";
+    document.getElementById('resultado').innerHTML = "Coloque algo";
   }
 };
 
@@ -46,3 +46,4 @@ function apagar(){
   document.getElementById('resultado').innerHTML = numero;
   document.getElementById('last-calc').innerHTML = resultado;
 }
+
