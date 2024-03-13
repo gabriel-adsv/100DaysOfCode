@@ -6,17 +6,17 @@ let fruitName
 let position = 1;
 
 for(let i = 0; i < 3; i++) {
-  fruitName = prompt(`Adicione a ${position}º fruta`);
+  fruitName = prompt(`Adicione a ${position}º fruta no array:`);
   fruits.push(fruitName);
   position++;
 }
 
-fruitName = prompt(`Adicione mais uma fruta`);
+fruitName = prompt(`Adicione mais uma fruta no array:`);
 fruits.push(fruitName);
 
-alert(`O array de frutas está assim: ${fruits.join([separador = ', '])}.`);
+alert(`O array de frutas ficou assim: ${fruits.join([separador = ', '])}.`);
 
 alert('Agora a primeira fruta será removida.');
 fruits.shift(0);
 
-alert(`Agora o array de frutas ficou assim: ${fruits.join([separador = ', '])}.`);
+alert(`E agora o array de frutas ficou assim: ${fruits.join([separador = ', '])}.`);
