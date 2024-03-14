@@ -9,3 +9,4 @@ let quadrados = numeros.map(function(numero) {
 
 console.log(quadrados); 
 
+  
