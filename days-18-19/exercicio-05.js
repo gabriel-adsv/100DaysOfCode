@@ -1,21 +1,21 @@
 // 5 - Escreva uma função para verificar se um elemento existe em um array.
-// 6 - Escreva uma função para concatenar dois arrays.
-// 7 - Escreva uma função para inverter um array.
-// 8 - Escreva uma função para ordenar um array de números em ordem crescente.
-// 9 - Escreva uma função para ordenar um array de números em ordem decrescente.
-// 10 - Escreva uma função para encontrar o índice de um elemento em um array.
-// 11 - Escreva uma função para contar o número de ocorrências de um elemento em um array.
-// 12 - Escreva uma função para filtrar elementos pares de um array.
-// 13 - Escreva uma função para encontrar a média dos elementos de um array numérico.
-// 14 - Escreva uma função para encontrar a mediana dos elementos de um array numérico.
-// 15 - Escreva uma função para encontrar o elemento mais frequente em um array.
-// 16 - Escreva uma função para calcular o produto dos elementos de um array numérico.
-// 17 - Escreva uma função para verificar se todos os elementos de um array são positivos.
-// 18 - Escreva uma função para verificar se algum elemento de um array é negativo.
-// 19 - Escreva uma função para encontrar o segundo maior número em um array numérico.
-// 20 - Escreva uma função para encontrar o segundo menor número em um array numérico.
-// 21 - Escreva uma função para calcular a diferença entre duas arrays.
-// 22 - Escreva uma função para criar um novo array sem os elementos fornecidos.
-// 23 - Escreva uma função para gerar um array de números inteiros aleatórios dentro de um intervalo específico.
-// 24 - Escreva uma função para embaralhar os elementos de um array.
-// 25 - Escreva uma função para agrupar os elementos de um array com base em um critério específico.
+function verificarElemento(array, elemento) {
+  // Passo 1: Iterar sobre cada elemento do array
+  for (let i = 0; i < array.length; i++) {
+    // Passo 2: Verificar se o elemento atual é igual ao elemento fornecido
+    if (array[i] === elemento) {
+      // Passo 3: Se encontrarmos o elemento, retornamos true
+      return true;
+    }
+  }
+  // Passo 4: Se o elemento não for encontrado após a iteração completa, retornamos false
+  return false;
+}
+
+// Exemplo de uso:
+const meuArray = [1, 2, 3, 4, 5];
+const elementoExistente = 3;
+const elementoNaoExistente = 6;
+
+console.log(verificarElemento(meuArray, elementoExistente)); // Saída: true
+console.log(verificarElemento(meuArray, elementoNaoExistente)); // Saída: false
