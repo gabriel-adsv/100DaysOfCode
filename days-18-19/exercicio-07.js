@@ -1,4 +1,14 @@
 // 7 - Escreva uma função para inverter um array.
+function inverterArray(array) {
+ return array.reverse();
+}
+
+let numeros = [1, 2, 3, 4, 5];
+console.log(numeros);
+
+let numerosInvertidos = inverterArray(numeros);
+console.log(numerosInvertidos);
+
 // 8 - Escreva uma função para ordenar um array de números em ordem crescente.
 // 9 - Escreva uma função para ordenar um array de números em ordem decrescente.
 // 10 - Escreva uma função para encontrar o índice de um elemento em um array.
