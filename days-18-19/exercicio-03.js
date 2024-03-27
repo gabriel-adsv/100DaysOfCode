@@ -3,15 +3,19 @@ function menorNumero(array) {
   let menor = array[0];
 
   for(let i = 0; i < array.length; i++) {
-    if(menor < array[i]) {
-      menor = menor;
-    } else {
+    if(menor > array[i]) {
       menor = array[i];
-    }
-  }
-  return menor;
-}
+    } else {
+      menor = menor;
+    };
+  };
 
-let numeros = [5, 15, 30, 8, 6, 9, 25];
+  return menor;
+};
+
+
+let numeros = [1, 56, 0, 5, 32, 6, 33, 9, 7];
+console.log(numeros);
+
 let resultado = menorNumero(numeros);
 console.log(resultado);
