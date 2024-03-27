@@ -1,14 +1,18 @@
 // 2 - Escreva uma função para encontrar o maior número em um array numérico.
 function maiorNumero(array) {
-  let maior = array[0];
+  let numeroMaior = array[0];
+
   for(let i = 0; i < array.length; i++) {
-    if(maior < array[i]) {
-      maior = array[i];
-    }
-  }
-  return maior
+    if(numeroMaior < array[i]) {
+      numeroMaior = array[i];  
+    };
+  };
+
+  return numeroMaior
 }
 
-let numeros = [5, 15, 3, 8, 6, 9, 2];
+let numeros = [3, 5, 7, 2, 1, 4, 9, 10]
+console.log(numeros)
+
 let resultado = maiorNumero(numeros);
-console.log(resultado);
+console.log(`O maior número do array é: ${resultado}.`);
