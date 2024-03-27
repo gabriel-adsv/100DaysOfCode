@@ -1,10 +1,10 @@
 // 7 - Escreva uma função para inverter um array.
 function inverterArray(array) {
- return array.reverse();
-}
+  return array.reverse();
+};
 
-let numeros = [1, 2, 3, 4, 5];
-console.log(numeros);
+let array = [1, 2, 3, 4, 5, 6];
+console.log(array);
 
-let numerosInvertidos = inverterArray(numeros);
-console.log(numerosInvertidos);
+let arrayInvertido = inverterArray(array);
+console.log(arrayInvertido);
