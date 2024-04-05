@@ -1,14 +1,16 @@
-// 8 - Escreva uma função para ordenar um array de números em ordem crescente.
-function ordemCrescente(array) {
-  array.sort(function (a, b) {
-    return a - b;
-  });
+// 8 - Remova o primeiro elemento do array.
 
-  return array;
-};
+// 1º passo - Criar um array
+let meuArray = [10, 20, 30, 40, 50];
 
-let numeros = [5, 2, 8, 1, 9, 7];
-console.log(numeros);
+// 2º passo - Exibir o array criado
+console.log('Array criado:', meuArray);
 
-let arrayOrdenado = ordemCrescente(numeros);
-console.log(arrayOrdenado);
+// 3º passo - Remover o primeiro elemento
+let elementoRemovido = meuArray.shift();
+
+// 4º passo - Exibir o elemento removido
+console.log('Elemento removido:', elementoRemovido);
+
+// 5º passo - Exibir o array novamente
+console.log('Array com o 1º elemento removido:', meuArray);
