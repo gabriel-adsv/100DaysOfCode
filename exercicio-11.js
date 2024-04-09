@@ -1,15 +1,7 @@
-// 11 - Escreva uma função para contar o número de ocorrências de um elemento em um array.
-function contadorOcorrencias(array, elemento) {
-  let contador = 0;
-  for(let i = 0; i < array.length; i++) {
-    if(array[i] === elemento) {
-      contador++;
-    };
-  };
-  return contador;
-}
+// 11 - Itere sobre todos os elementos do array usando um loop "for".
 
-let arrayElementos = [1, 2, 3, 4, 2, 2, 3, 2];
-const ocorrencia = 2;
-let numeroDeOcorrencias = contadorOcorrencias(arrayElementos, ocorrencia);
-console.log(`O elemento ${ocorrencia} ocorre ${numeroDeOcorrencias} vezes no array.`);
+const array = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+for(let i = 0; i < array.length; i++) {
+  console.log(array[i]);
+};
