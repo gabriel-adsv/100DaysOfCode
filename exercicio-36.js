@@ -1,23 +1,4 @@
-// 35 - Verifique se o array está vazio.
-
-function verificaVazio(array) {
-  if(array.length === 0) {
-    return true;
-  } else {
-    return false;
-  }
-};
-
-const arrayDeInteiros = [1, 2, 3, 4, 5];
-
-const arrayVazio = [];
-
-console.log(verificaVazio(arrayDeInteiros));
-
-console.log(verificaVazio(arrayVazio));
-
-
-// Itere sobre todos os elementos do array usando um loop "for".
+// 36 - Itere sobre todos os elementos do array usando um loop "for".
 // Itere sobre todos os elementos do array usando um loop "for...of".
 // Itere sobre todos os elementos do array usando o método "forEach()".
 // Multiplique cada elemento do array por 2.
