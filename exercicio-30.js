@@ -1,11 +1,6 @@
-// 28- Acesse o primeiro elemento do array.
+// 30 - Adicione um novo elemento ao final do array.
 const array = [1, 2, 3, 4, 5];
 
-console.log('primeiro elemento do array é', array[0]);
-
-
-// Acesse o último elemento do array.
-// Adicione um novo elemento ao final do array.
 // Remova o último elemento do array.
 // Adicione um novo elemento ao início do array.
 // Remova o primeiro elemento do array.
