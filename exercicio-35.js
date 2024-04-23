@@ -1,14 +1,22 @@
-// 33 - Remova o primeiro elemento do array.
-const array = [0, 1, 2, 3, 4, 5];
+// 35 - Verifique se o array está vazio.
 
-console.log('Array antes da remoção do 1º elemento:', array);
+function verificaVazio(array) {
+  if(array.length === 0) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
-array.shift();
+const arrayDeInteiros = [1, 2, 3, 4, 5];
 
-console.log('Array após a remoção do 1º elemento:', array);
+const arrayVazio = [];
 
-// Verifique o comprimento do array.
-// Verifique se o array está vazio.
+console.log(verificaVazio(arrayDeInteiros));
+
+console.log(verificaVazio(arrayVazio));
+
+
 // Itere sobre todos os elementos do array usando um loop "for".
 // Itere sobre todos os elementos do array usando um loop "for...of".
 // Itere sobre todos os elementos do array usando o método "forEach()".
