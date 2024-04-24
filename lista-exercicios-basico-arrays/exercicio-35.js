@@ -1,5 +1,4 @@
 // 35 - Verifique se o array está vazio.
-
 function verificaVazio(array) {
   if(array.length === 0) {
     return true;
